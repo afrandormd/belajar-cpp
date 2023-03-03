@@ -4,12 +4,11 @@ using namespace std;
 
 int main(){  
     int total = 0;
-    int diskon, jumlahBarang, hargaBaju;
+    int hargaBaju = 50000;
+    int diskon, jumlahBarang;
     bool isMember = false;
 
     cout << "===== Program Membership Pembelian Baju toko Sharein's Boutiqeu =====\n";
-    cout << "Masukkan harga /baju: ";
-    cin >> hargaBaju;
     cout << "Jumlah baju yang dibeli? ";
     cin >> jumlahBarang;
     cout << "Apakah member? ";
@@ -20,13 +19,14 @@ int main(){
         total = (jumlahBarang * hargaBaju) - diskon;
     } else {
         // ketika pembelian > 10 walaupun bukan member akan dapat diskon
-        if (jumlahBarang >= 10){
+        if (jumlahBarang >= 3){
             diskon = jumlahBarang * hargaBaju * 0.05;
-            total = (jumlahBarang * hargaBaju) - diskon;
+            total = (jumlahBarang * hargaBaju);
         } else {
             total = jumlahBarang * hargaBaju;
         }
     }
     // tampilkan output
-    cout << "Total yang harus dibayar: " << total;
+    cout << "Diskon yang didapat: Rp." << diskon;
+    cout << "\nTotal yang harus dibayar: Rp." << total;
 }
