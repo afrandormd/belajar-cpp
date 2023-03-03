@@ -30,24 +30,43 @@ int main(){
  }
 
  // IP (switch case)
+switch(nilaiMutu){
+    case 'A':
+        ip = 4;
+    break;
+    case 'B':
+        ip = 3;
+    break;
+    case 'C':
+        ip = 2;
+    break;
+    case 'D':
+        ip = 1;
+    break;
+    case 'E':
+        ip = 0;
+    break;
+    default:
+        cout << "nilai mutu tidak terdaftar";
+}
 
 // IP (if else)
-if (nilaiMutu == 'A'){
-    ip = 4;
-} else if (nilaiMutu == 'B'){
-    ip = 3;
-} else if (nilaiMutu == 'C'){
-    ip = 2;
-} else if (nilaiMutu == 'D'){
-    ip = 2;
-} else {
-    if (nilaiMutu == 'E'){
-        ip = 0;
-    } else {
-        cout << "Nilai mutu tidak terdaftar";
-        ip = 0;
-    }
-}
+// if (nilaiMutu == 'A'){
+//     ip = 4;
+// } else if (nilaiMutu == 'B'){
+//     ip = 3;
+// } else if (nilaiMutu == 'C'){
+//     ip = 2;
+// } else if (nilaiMutu == 'D'){
+//     ip = 2;
+// } else {
+//     if (nilaiMutu == 'E'){
+//         ip = 0;
+//     } else {
+//         cout << "Nilai mutu tidak terdaftar";
+//         ip = 0;
+//     }
+// }
 
 cout << "\nNilai: " << nilai;
 cout << "\nNilai mutu: " << nilaiMutu;
